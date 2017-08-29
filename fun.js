@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /*function to change marign top*/
         
     
-    document.getElementById("searchinput").addEventListener("input", function newMargin(){document.getElementById("searchinput").setAttribute("Style","margin-top:0%");
-//     document.getElementById("lin").setAttribute("Style","margin-top:0%"); 
+    document.getElementById("searchinput").addEventListener("input", function newMargin(){document.getElementById("searchinput").setAttribute("Style","margin-top:1%");
+
                                                                                           
         });
     
