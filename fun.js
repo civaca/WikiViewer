@@ -1,9 +1,7 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     
     
+   
     /*function to change marign top*/
         
     
@@ -12,16 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                           
         });
     
-   
-        
-        
-        
-        
        /*what to do with the imput*/ 
         
     document.getElementById("searchinput").addEventListener("change",function () {
-    
+     
+        /*clear results*/
+        var resultList = document.getElementById("results")
+         while (resultList.hasChildNodes()) {   
+    resultList.removeChild(resultList.firstChild);
+}
         
+    
+      /*define value of search*/  
         
         
         var x = document.getElementById("searchinput").value;
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
              
                 var newDiv= document.createElement("A");
         newDiv.setAttribute("class","search");
+                 newDiv.setAttribute("id","n"+i);
         newDiv.setAttribute("target","_blanck");
 
      newDiv.setAttribute("href", "http://en.wikipedia.org/?curid="+newAjax.query.search[i].pageid);
@@ -53,13 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
       
             
             var newTitle= document.createElement("H2");
-         newTitle.setAttribute("class","search");
         newTitle.innerHTML = newAjax.query.search[i].title;
        newDiv.appendChild(newTitle);
                 
           
                 var newText= document.createElement("P");
-        newText.setAttribute("class","search");
            newText.innerHTML = newAjax.query.search[i].snippet;
        newDiv.appendChild(newText);
       
@@ -69,33 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
            
            
    
-         };/*   closure of while*/
-            
+             };/*   closure of while*/
 
             
-        }/*closure of if*/
-    }; /*closure of onreadystate*/
+            }/*closure of if*/
+        }; /*closure of onreadystate*/
    
     
-     
-    
-     
-        
-        
-        
-}); /* closure of change*/    
+    }); /* closure of change*/    
 
 
-    
-    
-     
     
 }); /*closure of loaded*/
   
 
 
-//   document.getElementById("searchinput").addEventListener("change",
-    
-      
-//        );/*closure of change*/
-    
