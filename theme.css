@@ -1,0 +1,107 @@
+
+body{
+    font-size:100%;
+    
+}
+.box{
+   margin:1em 1em 0em 1em; 
+    
+}
+
+a.lin{
+    margin-left: 1%;
+    text-decoration: none;
+    color: initial;
+}
+
+a.search:link {
+    display: block;
+    background-color: rgba(224,224,224,0.2);
+    
+border:3px solid rgb(224,224,224);
+    text-decoration: none;
+    color: initial;
+    margin-bottom: 1em;
+}
+
+
+a.search:hover{
+    border:3px solid #00F;
+}
+
+a.search:visited{
+    border:3px solid #F00;
+}
+
+input[type=text] {
+    
+    width: 20%;
+    
+    
+    border:2px solid rgb(224,224,224);
+    margin:17% 0% 0% 30%;
+    -webkit-transition: width 1.5s , border 1.5s , margin 1.5s, position 1.5s; /* Safari */
+    transition: width 1s , border 1.5s , margin 1.5s, position 1.5s;
+    
+   
+}
+
+
+input[type=text]:focus {
+    border: 3px solid #FFF;
+
+    width: 20%;
+    margin:0% 0% 0% 35%;
+      
+}
+
+@media only screen and (min-width: 600px) {
+    .box{margin:1em 4em 0em 4em;}
+    input[type=text] {
+    
+    width: 20%;
+    
+    
+    border:2px solid rgb(224,224,224);
+    margin:17% 0% 0% 35%;
+    -webkit-transition: width 1.5s , border 1.5s , margin 1.5s, position 1.5s; /* Safari */
+    transition: width 1s , border 1.5s , margin 1.5s, position 1.5s;
+    
+   
+}
+
+
+input[type=text]:focus {
+    border: 3px solid #FFF;
+
+    width: 40%;
+    margin:0% 0% 0% 30%;
+      
+}
+}
+@media only screen and (min-width: 768px) {
+    .box{margin:1em 12em 0em 12em;
+    }
+    input[type=text] {
+    
+    width: 20%;
+    
+    
+    border:2px solid rgb(224,224,224);
+    margin:17% 0% 0% 35%;
+    -webkit-transition: width 1.5s , border 1.5s , margin 1.5s, position 1.5s; /* Safari */
+    transition: width 1s , border 1.5s , margin 1.5s, position 1.5s;
+    
+   
+}
+
+
+input[type=text]:focus {
+    border: 3px solid #FFF;
+
+    width: 40%;
+    margin:0% 0% 0% 35%;
+      
+}
+}
+
